@@ -1,0 +1,221 @@
+
+*{
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    padding: 0;
+    margin: 0;
+}  
+
+
+body{
+    background-color:$keyColor;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+p{
+    font-weight:$fontNormal;
+    margin: 1rem 1.2rem;
+    font-size: 1.2rem;
+    color:$darkColor;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight:$fontSemibold;
+}
+
+
+h2{
+    font-weight:$fontNormal;
+    font-size: 2.5rem;
+    color:$darkColor;
+    margin: 1.5rem 1.2rem;
+}
+
+
+h3{
+    margin: 1rem 1.2rem; 
+    font-weight:$fontNormal;
+}
+
+
+h4{
+    margin: 1rem 1.2rem; 
+    font-weight:$fontSemilight; 
+}
+
+
+nav{
+    background-color:$bgColor;
+}
+
+
+header{
+    img{
+        height: 500px;
+    }
+}
+
+
+.bg-color{
+    background-color:$darkColor;
+}
+
+
+.wrapper{
+    background-color:$keyColor;
+}
+
+
+.margin{
+    margin-top: 3rem;
+}
+
+
+section{
+    ul{
+        li{
+            font-weight:$fontNormal;
+            margin: .7rem 1.9rem;
+            font-size: .95rem;
+        }
+    }  
+}
+
+
+span{
+    b{
+        font-weight:$fontNormal;
+        font-size: 1.3rem;
+        margin: .8rem .5rem;
+        display: block;
+    }
+}
+
+//banner y encabezado
+
+.banner{
+    width: 100%;
+    border-style: solid;
+    border-width: .1rem;
+    border-color:$darkColor;
+}    
+
+
+.encabezado{
+    text-align: center;
+    color:$whiteColor;
+    background-color:$darkColor;
+    padding: .5rem;
+    border-style: solid;
+    border-width: .8rem;
+    border-color:$darkColor;
+}
+
+//footer
+
+footer{
+    display:flex;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    background-color:$bgColor;
+    opacity: 0.96;
+    svg{
+        width: 2.2rem;
+        margin-left: 1.5rem;
+    }
+    ul{
+        li{
+            padding: .2rem;
+            margin: .2rem 0;
+            font-size: 1.1rem;
+            font-weight:$fontMedium;    
+            a{
+                color: #c8c8c8;
+                &:hover{
+                    color:$keyColor;    
+                }
+            }
+        }
+    }
+    .div-border{
+        border-left: solid 2px $greyColor;
+        padding: 0 2rem;
+        margin: 0 1rem;
+    }
+    .bi-instagram{
+        fill:#c8c8c8;
+    }
+}
+
+//pagina error 404
+.error-404{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        height: 700px;
+    }
+}
+
+
+.btn-error{
+    @extend .btn-submit;
+    width: 250px!important;
+    margin-bottom: 2rem;
+}
+
+//pagina carrito
+.tabla-carrito{
+    width: 65%;
+}
+
+.cart-icon{
+    width: 35px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.carrito-header{
+    background-color: $greyColor;
+    padding: 15px;
+    width: 65%;
+    border-radius: .5rem;
+    h1{
+        color: white;
+        font-size: 2.2rem;
+        font-weight: 200;
+    }
+}
+
+.qualytech-cart{
+    background-color: $btnColor;
+    padding: 15px;
+    width: 35%;
+    border-radius: 1rem;
+    margin: 20px 0;
+    img{
+        width: 20%;
+    }
+    h2{
+        font-size: 1.4rem;
+        color: white;
+        margin-top: 30px;
+    }
+}

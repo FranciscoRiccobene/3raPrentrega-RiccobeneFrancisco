@@ -1,0 +1,491 @@
+//media queries
+
+//breakpoint > 1400px
+@media (min-width: 1401px) and (max-width: 1830px){
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        .card-index{
+            width: 22%;
+        }
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+
+//breakpoint 991px hasta 1400px
+@media (min-width: 991px) and (max-width: 1400px){
+    //media nav
+    nav{
+        img{
+            width: 60%;
+        }
+        ul{
+            width: 75%;    
+        }
+    }
+    .botonera{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        ul{
+            li{
+                a{
+                    font-size: .9rem;
+                    margin-left: .1rem;    
+                }
+            }
+        }
+    }
+    .btn-sesion{
+        width: 15%;
+        margin-right: .5rem;
+    }
+    .cart-shop{
+        width: 5%;
+    }
+    .cant-productos{
+        top: 34px;
+        right: 3px;
+    }
+    //encabezado, h2 y h3
+    header{
+        img{
+            height: 350px;
+        }
+    }
+    section{
+        h1{
+            font-size: 2rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    .btn-submit{
+        width: 25%;
+    }
+    .encabezado{
+        border-width: .2rem;
+        padding: 1rem;
+    }
+    .vision-mision{
+        width: 70%;
+    }
+    //media productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card-index{
+            width: 22%;
+        }
+    }
+    .card{
+        width: 100%;
+        p{
+            margin: .3rem;
+            font-size: 1rem;
+        }
+        button{
+            width: 100%!important;
+        }
+    }
+    //media pagina carrito
+    .carrito-header{
+        width: 80%;
+    }
+    .tabla-carrito{
+        width: 80%;
+    }
+    .qualytech-cart{
+        width: 50%;
+        padding: 10px;
+        img{
+            width: 20%;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+//breakpoint 768px hasta 992px
+@media (min-width: 767px) and (max-width: 992px){
+    //nav
+    .botonera{
+        display: flex;
+        flex-direction: column;
+        ul{
+            li{
+                padding: .3rem;
+            }
+        }
+    }
+    .input-group{
+        margin-bottom: .8rem;
+        width: 97%!important;
+        button{
+            margin-left: -.5rem;
+        }
+    }
+    .btn-sesion{
+        width: 20%;
+        margin-right: .6rem;
+    }
+    .cant-productos{
+        left: 38px;
+        top: 385px;
+    }
+    //encabezado, h2 y h3
+    .encabezado{
+        border: none;
+        padding: 1rem;
+    }
+    header{
+        img{
+            height:280px
+        }
+    }
+    section{
+        h1{
+            font-size: 2rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+    .arreglo{
+        margin: 2rem 2rem;
+    } 
+    .vision-mision{
+        width: 90%;
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    .btn-submit{
+        width: 25%;
+    }
+    .btn-flex{
+        display: flex;
+        justify-content: center;
+    }
+    //productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card-index{
+            width: 45%;
+        }
+    }
+    .card{
+        width: 100%;
+        p{
+            font-size: 1rem;
+        }
+        button{
+            width: 100%!important;
+        }
+    }
+    //grid de tienda
+    .tienda{
+        grid-template-columns: 30vh repeat(2,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "filters uno dos"
+        "filters tres cuatro"
+        "filters cinco seis"
+        "filters siete ocho"
+        "filters nueve .";
+    }
+    //footer
+    footer{
+        display: flex;
+        flex-direction: column;
+        svg{
+            width: 40px;
+            margin: .5rem 1.1rem;
+        }
+        ul{
+            li{
+                text-align: center;
+            }
+        }
+        div:nth-child(2){
+            margin: 1rem 0;
+            margin-right: .7rem;
+        }
+        .div-border{
+            border: none;
+        }
+    }
+    //media pagina carrito
+    .carrito-header{
+        width: 90%;
+    }
+    .tabla-carrito{
+        width: 90%;
+    }
+    .qualytech-cart{
+        width: 70%;
+        padding: 10px;
+        img{
+            width: 20%;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+//breakpoint < 768px
+@media (width < 768px){
+    //nav
+    .botonera{
+        display: flex;
+        flex-direction: column;
+        ul{
+            li{
+                padding: .3rem;
+            }
+        }
+    }
+    .input-group{
+        margin-bottom: .8rem;
+        width: 93%!important;
+        button{
+            margin-left: -.5rem;
+        }
+    }
+    .btn-sesion{
+        width: 40%;
+        margin-right: .6rem;
+        font-size: .9rem;
+    }
+    .cant-productos{
+        left: 38px;
+        top: 385px;
+    }
+    //productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    //encabezado, h2 y h3, quienes somos y ayuda
+    header{
+        img{
+            height: 170px;
+        }
+    }
+    section{
+        h1{
+            font-size: 1.1rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.7rem;
+        }
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    .encabezado{
+        border: none;
+        padding: 1rem;
+    }
+    .quienes-somos{
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 0;
+            margin: 0 1rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+    .vision-mision{
+        width: 100%;
+        h2{
+            margin-left: 1.1rem;
+            margin-top: 0;
+        }
+        p{
+            font-size: .9rem;
+            margin-top: 0;
+        }
+    }
+    .fs-2{
+        margin-left: 1.1rem;
+        font-weight:$fontNormal;
+        margin-bottom: 0;
+        font-size: 1.3rem!important;
+    }
+    div{
+        h3{
+            p{
+                font-size: .9rem;
+            }
+        }
+    }
+    .btn-submit{
+        width: 100%;
+    }
+    .arreglo{
+        margin: 1rem;
+    }
+    .text{
+        h2{
+            font-weight: $fontNormal;
+        }
+    }
+    //grid de tienda
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        "filters"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis"
+        "siete"
+        "ocho"
+        "nueve";
+    }
+    .filters-fix{
+        span{
+            display: none;
+        }
+        ul{
+            display: none;
+        }
+        h2{
+            text-align: center;
+            margin: .5rem;
+        }
+    }
+    .card{
+        width: 100%;
+        p{
+            font-size: .8rem;
+            margin: .4rem 0;
+        }
+        button{
+            width: 100%!important;
+            margin: 0;
+        }
+        h3{
+            font-size: 1.2rem;
+            margin: .2rem 0;
+        }
+    }
+    section{
+        h2{
+            font-size: 1.3rem;
+            margin-left: 0;
+            font-weight:$fontMedium;
+        }
+        span{
+            b{
+                margin: 0;
+                font-size: 1rem;
+                font-weight:$fontMedium;
+            }
+        }
+        ul{
+            li{
+                margin: 0.2rem;
+                font-size: .9rem;
+            }
+        }
+    }
+    //footer
+    footer{
+        display: flex;
+        flex-direction: column;
+        svg{
+            width: 40px;
+            margin: .5rem .8rem;
+        }
+        ul{
+            li{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        div:nth-child(2){
+            margin: 1rem 0;
+            margin-right: .7rem;
+        }
+        .div-border{
+            border: none;
+        }
+    }
+    //pag error 404
+    .error-404{
+        img{
+            height: 400px;
+        }
+    }
+}
+
+//media pag error 404
+@media (width < 400px){
+    .error-404{
+        img{
+            height: 300px;
+        }
+    }
+    .btn-error{
+        width: 200px!important;
+    }
+}
+
+//media corrección btn-sesion 
+@media (min-width: 450px) and (max-width: 767px){
+    .btn-sesion{
+        width: 28%;
+    }
+}
+
+//media corrección numero cant-productos
+@media (min-width: 992px) and (max-width: 1196px){
+    .cant-productos{
+        right: -1px;
+        top: 70px;
+    }
+}
