@@ -95,7 +95,7 @@ function vaciarCarrito() {
 }
 
 function totalEnCarrito() {
-    total.innerText = '$ ' + productosCarrito.reduce((acc,total) => acc + (total.precio * total.cantidad), 0);
+    totalCarrito.innerText = '$ ' + productosCarrito.reduce((acc,total) => acc + (total.precio * total.cantidad), 0);
 }
 
 botonComprar.addEventListener('click', comprarCarrito);
