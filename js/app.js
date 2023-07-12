@@ -35,69 +35,32 @@ const celular8 = new Producto ('celular-08','Celular Apple Iphone 14 Plus 256Gb 
 const celular9 = new Producto ('celular-09','Celular Apple Iphone 13 512Gb - Blue Night','../img/productos/celulares/celular09.webp',653555,'','iphone','celulares','Celular Apple Iphone 13, 512Gb de memoria, color Blue Night');
 
 
-let productos = [pcEscritorio1,pcEscritorio2,pcEscritorio3,pcEscritorio4,pcEscritorio5,pcEscritorio6,pcEscritorio7,pcEscritorio8,pcEscritorio9,notebook1,notebook2,notebook3,notebook4,notebook5,notebook6,notebook7,notebook8,notebook9,celular1,celular2,celular3,celular4,celular5,celular6,celular7,celular8,celular9];
+const productos = [pcEscritorio1,pcEscritorio2,pcEscritorio3,pcEscritorio4,pcEscritorio5,pcEscritorio6,pcEscritorio7,pcEscritorio8,pcEscritorio9,notebook1,notebook2,notebook3,notebook4,notebook5,notebook6,notebook7,notebook8,notebook9,celular1,celular2,celular3,celular4,celular5,celular6,celular7,celular8,celular9];
 
-let contenedorPcs = document.querySelector('#contenedor-pcs');
-let contenedorNotebooks = document.querySelector('#contenedor-notebooks');
-let contenedorCelulares = document.querySelector('#contenedor-celulares');
+const contenedorPcs = document.querySelector('#contenedor-pcs');
+const contenedorNotebooks = document.querySelector('#contenedor-notebooks');
+const contenedorCelulares = document.querySelector('#contenedor-celulares');
+const contenedorProdDestacados = document.querySelector('#productos-destacados');
+const contenedorNuevosIngresos = document.querySelector('#nuevos-ingresos');
 let botonesAgregar = document.querySelectorAll('.btn-cart');
+const numeroCarrito = document.querySelector('#numerito');
 
 const productosPcs = productos.filter((el) => el.categoria.includes('pcs'));
 const productosNotebooks = productos.filter((el) => el.categoria.includes('notebooks'));
 const productosCelulares = productos.filter((el) => el.categoria.includes('celulares'));
 
-function cargarProductos() {
-
-        productosPcs.forEach(producto => {
-            const div = document.createElement('div');
-            div.classList.add('card');
-            div.innerHTML = `
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
-                <div class="card-body bg-card">
-                    <h3 class="card-title fw-semibold">$${producto.precio}</h3>
-                    <p class="card-text">${producto.descripcion}</p>
-                    <button class="btn btn-cart" id="${producto.id}">Agregar al carrito</button>
-                </div>
-            `;
-            contenedorPcs.append(div);
-        })
-
-        productosNotebooks.forEach(producto => {
-            const divN = document.createElement('div');
-            divN.classList.add('card');
-            divN.innerHTML = `
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
-                <div class="card-body bg-card">
-                    <h3 class="card-title fw-semibold">$${producto.precio}</h3>
-                    <p class="card-text">${producto.descripcion}</p>
-                    <button class="btn btn-cart" id="${producto.id}">Agregar al carrito</button>
-                </div>
-            `;
-            contenedorNotebooks.append(divN);
-        })
-
-        productosCelulares.forEach(producto => {
-            const divC = document.createElement('div');
-            divC.classList.add('card');
-            divC.innerHTML = `
-                <img src="${producto.imagen}" class="card-img-top img-fix" alt="${producto.alt}">
-                <div class="card-body bg-card">
-                    <h3 class="card-title fw-semibold">$${producto.precio}</h3>
-                    <p class="card-text">${producto.descripcion}</p>
-                    <button class="btn btn-cart" id="${producto.id}">Agregar al carrito</button>
-                </div>
-            `;
-            contenedorCelulares.append(divC);
-        })
-
-    actualizarBotones();    
-}
-
-cargarProductos();
-
 ///Carrito de compras 
 
-const productosCarrito = [];
+let productosCarrito;
+
+let productosCarritosLS = localStorage.getItem("productos-carrito");
+
+if (productosCarritosLS) {
+    productosCarrito = JSON.parse(productosCarritosLS);
+    numeritoActualizado();
+} else {
+    productosCarrito = [];
+}
 
 function actualizarBotones() {
     botonesAgregar = document.querySelectorAll('.btn-cart');
@@ -118,7 +81,13 @@ function agregarCarrito(e) {
         productoAgregado.cantidad = 1;
         productosCarrito.push(productoAgregado);
     }
+    numeritoActualizado();
+    localStorage.setItem('productos-carrito', JSON.stringify(productosCarrito));
 }
 
+function numeritoActualizado() {
+    const numerito = productosCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numeroCarrito.innerText = numerito;
+}
 
 

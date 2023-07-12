@@ -265,6 +265,9 @@
 
 //breakpoint < 768px
 @media (width < 768px){
+    body{
+        padding-bottom: 25rem;
+    }
     //nav
     .botonera{
         display: flex;

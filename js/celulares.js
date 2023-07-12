@@ -1,4 +1,4 @@
-/*
+
 function cargarCelulares() {
     productosCelulares.forEach(producto => {
         const divC = document.createElement('div');
@@ -18,4 +18,3 @@ function cargarCelulares() {
 
 cargarCelulares();
 
-*/

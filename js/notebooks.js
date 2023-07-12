@@ -1,4 +1,4 @@
-/*
+
 function cargarNotebooks() {
     productosNotebooks.forEach(producto => {
         const divN = document.createElement('div');
@@ -17,4 +17,4 @@ function cargarNotebooks() {
 }
 
 cargarNotebooks();
-*/
+

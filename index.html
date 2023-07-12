@@ -53,7 +53,7 @@
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                         </svg>
                     </a>
-                    <span class="cant-productos me-3">0</span>
+                    <span id="numerito" class="cant-productos me-3">0</span>
                 </li>
             </ul>
           </div>
@@ -101,87 +101,21 @@
         <div class="margin">
             <h2 class="text-center">Productos destacados</h2>
         </div>
-    <!--Sección productos destacados-->
         <section>
-            <div class="productos">
-                <div class="card card-index">
-                    <img src="./img/productos/pcs-escritorio/pc-escritorio05.jpg" class="card-img-top" alt="Pc gamer ensamblada, Ryzen 3 RTX 3060Ti">
-                    <div class="card-body bg-card">
-                        <h3 class="card-title fw-semibold">$614.339</h3>
-                        <p class="card-text">Pc AMD Gamer Karios PRO Ryzen 3 4100 16Gb SSD 240Gb RTX 3060Ti</p>
-                        <button class="btn btn-cart">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="card card-index">
-                    <img src="./img/productos/pcs-escritorio/pc-escritorio07.jpg" class="card-img-top" alt="Pc gamer ensamblada, Intel Corei5 + Monitor 22 pulgadas">
-                    <div class="card-body bg-card">
-                        <h3 class="card-title fw-semibold">$350.169</h3>
-                        <p class="card-text">Pc Intel i5 12400 SSD 240Gb 16Gb + Monitor 22".</p>
-                        <button class="btn btn-cart">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="card card-index">
-                    <img src="./img/productos/notebooks/notebook08.jpg" class="card-img-top" alt="Notebook Gigabyte, RTX 3070 512Gb">
-                    <div class="card-body bg-card">
-                        <h3 class="card-title fw-semibold">$1.249.999</h3>
-                        <p class="card-text">Notebook Gigabyte Aorus 17G i7 11800H RTX 3070 16Gb SSD 512Gb 17 W10</p>
-                        <button class="btn btn-cart">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="card card-index">
-                    <img src="./img/productos/notebooks/notebook06.jpg" class="card-img-top" alt="Notebook Asus Zenbook, Core i7 SSD 1Tb">
-                    <div class="card-body bg-card">
-                        <h3 class="card-title fw-semibold">$999.990</h3>
-                        <p class="card-text">Notebook Asus Zenbook Duo 14 UX482EGR-KA337W Core i7 1195G7 16Gb SSD 1Tb MX 450 14 W11</p>
-                        <button class="btn btn-cart">Agregar al carrito</button>
-                    </div>
-                </div>
+            <div id="productos-destacados" class="productos">
+                <!--Productos cargados en JS-->
             </div>
         </section>
-    <!--Termina productos destacados-->
-    <!--Sección nuevos ingresos-->
         <div class="mt-5">
             <h2 class="text-center">Nuevos ingresos</h2>
         </div>
         <div>
             <section>
-                <div class="productos">
-                    <div class="card card-index">
-                        <img src="./img/productos/celulares/celular07.webp" class="card-img-top img-fix" alt="Celular Iphone 13 Pro, 512Gb Silver">
-                        <div class="card-body bg-card">
-                            <h3 class="card-title fw-semibold">$975.099</h3>
-                            <p class="card-text">Celular Apple Iphone 13 Pro 512Gb - Silver</p>
-                            <button class="btn btn-cart">Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="card card-index">
-                        <img src="./img/productos/celulares/celular04.jpg" class="card-img-top" alt="Celular Samsung Galaxy Xcover Pro, 64gb">
-                        <div class="card-body bg-card">
-                            <h3 class="card-title fw-semibold">$179.990</h3>
-                            <p class="card-text">Celular Samsung Galaxy Xcover Pro 4Gb RAM 64Gb P/uso Intenso</p>
-                            <button class="btn btn-cart">Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="card card-index">
-                        <img src="./img/productos/notebooks/notebook09.jpg" class="card-img-top" alt="Notebook Apple Macbook Air, 512Gb Grey">
-                        <div class="card-body bg-card">
-                            <h3 class="card-title fw-semibold">$899.999</h3>
-                            <p class="card-text">Notebook Apple Macbook Air M1 13 8Gb 512Gb Space Grey</p>
-                            <button class="btn btn-cart">Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="card card-index">
-                        <img src="./img/productos/pcs-escritorio/pc-escritorio06.jpg" class="card-img-top" alt="Pc gamer ensamblada, Intel i3 RX 570, 1Tb">
-                        <div class="card-body bg-card">
-                            <h3 class="card-title fw-semibold">$280.139</h3>
-                            <p class="card-text">Pc Intel Gamer Thermaltake i3 10100F 8Gb 1Tb 650W RX 570 4Gb</p>
-                            <button class="btn btn-cart">Agregar al carrito</button>
-                        </div>
-                    </div>
+                <div id="nuevos-ingresos" class="productos">
+                    <!--Productos cargados en JS-->
                 </div>
             </section>
         </div>
-    <!--Termina sección nuevos ingresos-->
     </main>
 <!--Termina main-->
 <!--Empieza footer-->
@@ -239,5 +173,6 @@
 <!--Js scripts-->
     <script src="./js/model/productos.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/inicio.js"></script>
 </body>
 </html>

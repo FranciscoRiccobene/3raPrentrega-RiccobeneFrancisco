@@ -1,4 +1,4 @@
-/*
+
 function cargarPcs() {
     productosPcs.forEach(producto => {
         const div = document.createElement('div');
@@ -16,4 +16,4 @@ function cargarPcs() {
     actualizarBotones();
 }
 
-cargarPcs();*/
+cargarPcs();

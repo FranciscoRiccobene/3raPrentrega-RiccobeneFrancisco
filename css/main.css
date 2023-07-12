@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
 
 body {
   background-color: antiquewhite;
+  padding-bottom: 10rem;
+  position: relative;
+  min-height: 100vh;
 }
 
 ul {
@@ -56,6 +59,10 @@ nav {
 
 header img {
   height: 500px;
+}
+
+.disabled {
+  display: none !important;
 }
 
 .bg-color {
@@ -107,6 +114,9 @@ footer {
   align-items: center;
   background-color: rgb(24, 24, 24);
   opacity: 0.96;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer svg {
   width: 2.2rem;
@@ -147,8 +157,12 @@ footer .bi-instagram {
   margin-bottom: 2rem;
 }
 
+.carrito-esta-vacio {
+  color: gray;
+}
+
 .tabla-carrito {
-  width: 65%;
+  width: 80%;
 }
 
 .cart-icon {
@@ -158,9 +172,9 @@ footer .bi-instagram {
 }
 
 .carrito-header {
-  background-color: grey;
+  background-color: rgb(49, 49, 49);
   padding: 15px;
-  width: 65%;
+  width: 80%;
   border-radius: 0.5rem;
 }
 .carrito-header h1 {
@@ -183,6 +197,78 @@ footer .bi-instagram {
   font-size: 1.4rem;
   color: white;
   margin-top: 30px;
+}
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+.contenedor-carrito .carrito-productos {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.contenedor-carrito .carrito-productos .carrito-boton {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  margin-right: 1rem;
+  align-self: center;
+  fill: rgb(134, 0, 0);
+}
+.contenedor-carrito .carrito-productos h3 {
+  font-weight: 400;
+  color: white;
+}
+.contenedor-carrito .carrito-productos p {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.contenedor-carrito .carrito-productos .p-fix {
+  width: 50%;
+}
+.contenedor-carrito .carrito-imagen {
+  width: 10rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-top: -0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.carrito-acciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.carrito-acciones .carrito-btn {
+  width: 150px !important;
+  border-style: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.carrito-acciones .carrito-acciones-total {
+  display: flex;
+}
+.carrito-acciones .carrito-acciones-total .bg-carrito {
+  text-align: center;
+  width: 60%;
+  background-color: gray;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 0;
+}
+.carrito-acciones .carrito-acciones-total .carrito-btn2 {
+  width: 150px !important;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-style: none;
+  padding: 0.7rem;
 }
 
 .navbar-nav:hover {
@@ -403,12 +489,12 @@ footer .bi-instagram {
   background-color: rgb(250, 229, 201);
 }
 
-.btn-submit, .btn-error, .card button {
+.btn-submit, .btn-error, .carrito-acciones .carrito-btn, .carrito-acciones .carrito-acciones-total .carrito-btn2, .card button {
   background-color: #023859;
   color: white;
   width: 15%;
 }
-.btn-submit:hover, .btn-error:hover, .card button:hover {
+.btn-submit:hover, .btn-error:hover, .carrito-acciones .carrito-btn:hover, .carrito-acciones .carrito-acciones-total .carrito-btn2:hover, .card button:hover {
   background-color: #024772;
   color: white;
 }
@@ -478,7 +564,7 @@ footer .bi-instagram {
   .fs-2 {
     font-size: 1.5rem !important;
   }
-  .btn-submit, .btn-error, .card button {
+  .btn-submit, .btn-error, .carrito-acciones .carrito-btn, .carrito-acciones .carrito-acciones-total .carrito-btn2, .card button {
     width: 25%;
   }
   .encabezado {
@@ -571,7 +657,7 @@ footer .bi-instagram {
   .fs-2 {
     font-size: 1.5rem !important;
   }
-  .btn-submit, .btn-error, .card button {
+  .btn-submit, .btn-error, .carrito-acciones .carrito-btn, .carrito-acciones .carrito-acciones-total .carrito-btn2, .card button {
     width: 25%;
   }
   .btn-flex {
@@ -636,6 +722,9 @@ footer .bi-instagram {
   }
 }
 @media (width < 768px) {
+  body {
+    padding-bottom: 25rem;
+  }
   .botonera {
     display: flex;
     flex-direction: column;
@@ -711,7 +800,7 @@ footer .bi-instagram {
   div h3 p {
     font-size: 0.9rem;
   }
-  .btn-submit, .btn-error, .card button {
+  .btn-submit, .btn-error, .carrito-acciones .carrito-btn, .carrito-acciones .carrito-acciones-total .carrito-btn2, .card button {
     width: 100%;
   }
   .arreglo {
