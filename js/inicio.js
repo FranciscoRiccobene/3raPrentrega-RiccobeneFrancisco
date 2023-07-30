@@ -1,17 +1,11 @@
-const productosDestacados = [pcEscritorio5,pcEscritorio7,notebook8,notebook6];
-const nuevosIngresos = [celular7,celular4,notebook9,pcEscritorio6];
+async function cargarProductosPagInicio() {
+    const response = await traerProductos();
+    if(response.ok) {
+        productos = await response.json();
+        let productosDestacados = productos.filter((el) => el.seccion === 'productos-destacados');
+        let nuevosIngresos = productos.filter((el) => el.seccion === 'nuevos-ingresos');
 
-function cargarProductosPagInicio() {
-    pcEscritorio5.imagen = "./img/productos/pcs-escritorio/pc-escritorio05.jpg";
-    pcEscritorio7.imagen = "./img/productos/pcs-escritorio/pc-escritorio07.jpg";
-    notebook8.imagen = "./img/productos/notebooks/notebook08.jpg";
-    notebook6.imagen = "./img/productos/notebooks/notebook06.jpg";
-    celular7.imagen = "./img/productos/celulares/celular07.webp";
-    celular4.imagen = "./img/productos/celulares/celular04.jpg";
-    notebook9.imagen = "./img/productos/notebooks/notebook09.jpg";
-    pcEscritorio6.imagen = "./img/productos/pcs-escritorio/pc-escritorio06.jpg";
-
-    productosDestacados.forEach(producto => {
+        productosDestacados.forEach(producto => {
         const div = document.createElement('div');
         div.classList.add('card', 'card-index');
         div.innerHTML = `
@@ -38,11 +32,9 @@ function cargarProductosPagInicio() {
         contenedorNuevosIngresos.append(div);
     })
     actualizarBotones();
+    }else {
+        console.log('Hubo un error en el servidor...');
+    }
 }
 
 cargarProductosPagInicio();
-
-function numeritoActualizado() {
-    let numerito = productosCarrito.reduce((acc, numerito) => acc + numerito.cantidad, 0);
-    numeroCarrito.innerText = numerito;
-}

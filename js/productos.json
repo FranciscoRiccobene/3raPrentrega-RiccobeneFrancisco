@@ -1,0 +1,280 @@
+[
+    {
+      "id": "pc-escritorio-01",
+      "descripcion": "Pc Intel i5 10400 SSD 240Gb 8Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio01.jpg",
+      "precio": 224099,
+      "procesador": "intel",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc ensamblada, IntelCore i5 SSD 240Gb de memoria"
+    },
+    {
+      "id": "pc-escritorio-02",
+      "descripcion": "Pc AMD Ryzen 5 5600G 8Gb SSD 240Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio02.jpg",
+      "precio": 210089,
+      "procesador": "amd",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc ensamblada, IntelCore i3 décima generación, 8Gb RAM, 240Gb de memoria"
+    },
+    {
+      "id": "pc-escritorio-03",
+      "descripcion": "Pc Intel i3 10105 SSD 240Gb 8Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio03.jpg",
+      "precio": 203079,
+      "procesador": "intel",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc ensamblada, IntelCore i5 SSD 240Gb de memoria"
+    },
+    {
+      "id": "pc-escritorio-04",
+      "descripcion": "Pc Gamer Intel Kairos Core i3 10105F 16Gb SSD 240Gb GTX 1660Ti 6Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio04.jpg",
+      "precio": 415759,
+      "procesador": "intel",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc gamer ensamblada, IntelCore i3 décima generación, 16Gb RAM, 240Gb de memoria GTX 1660Ti"
+    },
+    {
+      "id": "pc-escritorio-05",
+      "descripcion": "Pc AMD Gamer Kairos PRO Ryzen 7 4750G 16Gb SSD 240Gb RTX 3060Ti",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio05.jpg",
+      "precio": 614339,
+      "procesador": "amd",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc gamer ensamblada, AMD Ryzen 7 4750G, 16Gb RAM 240gb memoria, RTX 3060Ti",
+      "seccion": "productos-destacados"
+    },
+    {
+      "id": "pc-escritorio-06",
+      "descripcion": "Pc Intel Gamer Thermaltake i3 10100F 8Gb 1Tb 650W RX 570 4Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio06.jpg",
+      "precio": 280139,
+      "procesador": "intel",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc gamer Thermaltake ensamblada, IntelCore i3 décima generación, 8Gb RAM 1Tb memoria, RX 570",
+      "seccion": "nuevos-ingresos"
+    },
+    {
+      "id": "pc-escritorio-07",
+      "descripcion": "Pc Intel i5 12400 SSD 240Gb 16Gb + Monitor 22\"",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio07.jpg",
+      "precio": 350169,
+      "procesador": "intel",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc para trabajo ensamblada, IntelCore i5 doceava generación, 16Gb RAM 240Gb de memoria + Monitor 22 pulgadas",
+      "seccion": "productos-destacados"
+    },
+    {
+      "id": "pc-escritorio-08",
+      "descripcion": "Pc AMD Ryzen 7 5700G 16Gb SSD 240Gb",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio08.jpg",
+      "precio": 273119,
+      "procesador": "amd",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc ensamblada, AMD Ryzen 7 5700G, 16Gb RAM SSD 240Gb de memoria"
+    },
+    {
+      "id": "pc-escritorio-09",
+      "descripcion": "Pc AMD Gamer Karios PRO Ryzen 3 4100 16Gb SSD 240Gb RTX 3060Ti",
+      "imagen": "../img/productos/pcs-escritorio/pc-escritorio09.jpg",
+      "precio": 614339,
+      "procesador": "amd",
+      "marca": "",
+      "categoria": "pcs",
+      "alt": "Pc gamer ensamblada, AMD Ryzen 3 4100, 16Gb RAM 240Gb memoria, RTX 3060Ti"
+    },
+    {
+      "id": "notebook-01",
+      "descripcion": "Notebook Lenovo V15 Pentium N5030 4Gb 1Tb 15.6\" Free",
+      "imagen": "../img/productos/notebooks/notebook01.jpg",
+      "precio": 224990,
+      "procesador": "intel",
+      "marca": "lenovo",
+      "categoria": "notebooks",
+      "alt": "Notebook Lenovo, procesador Pentium 1Tb"
+    },
+    {
+      "id": "notebook-02",
+      "descripcion": "Notebook HP 245 G8 AMD Athlon 3020E 1Tb 4Gb 14 Free",
+      "imagen": "../img/productos/notebooks/notebook02.jpg",
+      "precio": 218499,
+      "procesador": "amd",
+      "marca": "hp",
+      "categoria": "notebooks",
+      "alt": "Notebook HP, AMD Athlon 1Tb"
+    },
+    {
+      "id": "notebook-03",
+      "descripcion": "Notebook Dell Vostro 3401 i3 1005G1 8Gb SSD 256Gb 14 Free",
+      "imagen": "../img/productos/notebooks/notebook03.jpg",
+      "precio": 259990,
+      "procesador": "intel",
+      "marca": "dell",
+      "categoria": "notebooks",
+      "alt": "Notebook Dell Vostro, Core i3 SSD 256Gb"
+    },
+    {
+      "id": "notebook-04",
+      "descripcion": "Notebook Gigabyte Aorus 5 KE4 i7 12700H 16Gb SSD 1Tb RTX 3060 15.6\" W10",
+      "imagen": "../img/productos/notebooks/notebook10.jpg",
+      "precio": 1189999,
+      "procesador": "intel",
+      "marca": "gigabyte",
+      "categoria": "notebooks",
+      "alt": "Notebook gamer Gigabyte Aorus, IntelCore i7 SSD 1Tb RTX 3060"
+    },
+    {
+      "id": "notebook-05",
+      "descripcion": "Notebook Asus ROG Zephyrus G14 GA401 IHR Ryzen 7 4800HS 16Gb 512Gb 1650 14 W10",
+      "imagen": "../img/productos/notebooks/notebook05.jpg",
+      "precio": 999990,
+      "procesador": "amd",
+      "marca": "asus",
+      "categoria": "notebooks",
+      "alt": "Notebook Asus ROG Gamer, Ryzen 7 16Gb Ram, 512Gb de memoria"
+    },
+    {
+      "id": "notebook-06",
+      "descripcion": "Notebook Asus Zenbook Duo 14 UX482EGR-KA337W Core i7 1195G7 16Gb SSD 1Tb MX 450 14 W11",
+      "imagen": "../img/productos/notebooks/notebook06.jpg",
+      "precio": 999990,
+      "procesador": "intel",
+      "marca": "asus",
+      "categoria": "notebooks",
+      "alt": "Notebook Asus Zenbook, Core i7 SSD 1Tb de memoria",
+      "seccion": "productos-destacados"
+    },
+    {
+      "id": "notebook-07",
+      "descripcion": "Nootebok Apple Macbook AIR M1 13 8Gb 512Gb Silver",
+      "imagen": "../img/productos/notebooks/notebook11.jpg",
+      "precio": 899999,
+      "procesador": "",
+      "marca": "apple",
+      "categoria": "notebooks",
+      "alt": "Notebook Apple Macbook AIR, 512 Gb memoria, Silver"
+    },
+    {
+      "id": "notebook-08",
+      "descripcion": "Notebook Gigabyte Aorus 17G i7 11800H RTX 3070 16Gb SSD 512Gb 17 W10",
+      "imagen": "../img/productos/notebooks/notebook08.jpg",
+      "precio": 1249999,
+      "procesador": "intel",
+      "marca": "gigabyte",
+      "categoria": "notebooks",
+      "alt": "Notebook gamer Gigabyte Aorus, IntelCore i7 RTX 3060, 512Gb memoria",
+      "seccion": "productos-destacados"
+    },
+    {
+      "id": "notebook-09",
+      "descripcion": "Notebook Apple Macbook Air M1 13 8Gb 512Gb Space Grey",
+      "imagen": "../img/productos/notebooks/notebook09.jpg",
+      "precio": 899999,
+      "procesador": "",
+      "marca": "apple",
+      "categoria": "notebooks",
+      "alt": "Notebook Apple Macbook AIR, 512Gb memoria, Grey",
+      "seccion": "nuevos-ingresos"
+    },
+    {
+      "id": "celular-01",
+      "descripcion": "Celular Motorola G42 4Gb RAM 128Gb",
+      "imagen": "../img/productos/celulares/celular01.png",
+      "precio": 89999,
+      "procesador": "",
+      "marca": "motorola",
+      "categoria": "celulares",
+      "alt": "Celular Motorola G42, 128Gb de memoria"
+    },
+    {
+      "id": "celular-02",
+      "descripcion": "Celular Motorola E32 64Gb 4Gb RAM",
+      "imagen": "../img/productos/celulares/celular02.png",
+      "precio": 63999,
+      "procesador": "",
+      "marca": "motorola",
+      "categoria": "celulares",
+      "alt": "Celular Motorola E32, 64Gb de memoria"
+    },
+    {
+      "id": "celular-03",
+      "descripcion": "Celular Motorola G72 128Gb 4Gb RAM",
+      "imagen": "../img/productos/celulares/celular03.png",
+      "precio": 119999,
+      "procesador": "",
+      "marca": "motorola",
+      "categoria": "celulares",
+      "alt": "Celular Motorola G72, 128Gb de memoria"
+    },
+    {
+      "id": "celular-04",
+      "descripcion": "Celular Samsung Galaxy Xcover Pro 4Gb RAM 64Gb P/uso Intenso",
+      "imagen": "../img/productos/celulares/celular04.jpg",
+      "precio": 179990,
+      "procesador": "",
+      "marca": "samsung",
+      "categoria": "celulares",
+      "alt": "Celular Samsung Galaxy Xcover Pro, 64gb",
+      "seccion": "nuevos-ingresos"
+    },
+    {
+      "id": "celular-05",
+      "descripcion": "Celular Samsung Galaxy A53 5g 8Gb Ram + 256Gb - Black",
+      "imagen": "../img/productos/celulares/celular05.webp",
+      "precio": 196999,
+      "procesador": "",
+      "marca": "samsung",
+      "categoria": "celulares",
+      "alt": "Celular Samsung Galaxy A53 8Gb Ram + 256Gb de memoria, Black"
+    },
+    {
+      "id": "celular-06",
+      "descripcion": "Celular Samsung Galaxy A04s 128Gb 4Gb RAM - Black - Aquamarine",
+      "imagen": "../img/productos/celulares/celular06.webp",
+      "precio": 68729,
+      "procesador": "",
+      "marca": "samsung",
+      "categoria": "celulares",
+      "alt": "Celular Samsung Galaxy A04s, 128Gb de memoria, Black"
+    },
+    {
+      "id": "celular-07",
+      "descripcion": "Celular Apple Iphone 13 Pro 512Gb - Silver",
+      "imagen": "../img/productos/celulares/celular07.webp",
+      "precio": 975099,
+      "procesador": "",
+      "marca": "apple",
+      "categoria": "celulares",
+      "alt": "Celular Apple Iphone 13 Pro, 512Gb de memoria - Silver",
+      "seccion": "nuevos-ingresos"
+    },
+    {
+      "id": "celular-08",
+      "descripcion": "Celular Apple Iphone 14 Plus 256Gb - Red",
+      "imagen": "../img/productos/celulares/celular08.webp",
+      "precio": 774999,
+      "procesador": "",
+      "marca": "apple",
+      "categoria": "celulares",
+      "alt": "Celular Apple Iphone 14 Plus, 256Gb de memoria - Color Red"
+    },
+    {
+      "id": "celular-09",
+      "descripcion": "Celular Apple Iphone 13 512Gb - Blue Night",
+      "imagen": "../img/productos/celulares/celular09.webp",
+      "precio": 653555,
+      "procesador": "",
+      "marca": "apple",
+      "categoria": "celulares",
+      "alt": "Celular Apple Iphone 13, 512Gb de memoria, color Blue Night"
+    }
+  ]

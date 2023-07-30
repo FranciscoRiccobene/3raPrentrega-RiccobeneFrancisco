@@ -161,6 +161,10 @@ footer .bi-instagram {
   color: gray;
 }
 
+.carrito-esta-comprado {
+  color: gray;
+}
+
 .tabla-carrito {
   width: 80%;
 }
@@ -355,6 +359,9 @@ footer .bi-instagram {
   background-color: rgb(186, 186, 186);
   padding: 0.5rem;
 }
+.filters-fix h2 {
+  color: #023859;
+}
 .filters-fix select {
   background-color: #024772;
   color: white;
@@ -417,6 +424,15 @@ footer .bi-instagram {
 }
 .tienda .filters {
   grid-area: filters;
+}
+.tienda .boton-filtro {
+  color: rgb(62, 62, 62);
+  background-color: transparent;
+  border: none;
+  margin-left: -0.6rem;
+}
+.tienda .boton-filtro:hover {
+  color: white;
 }
 
 .vision-mision {
@@ -610,6 +626,9 @@ footer .bi-instagram {
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
+  body {
+    padding-bottom: 23rem;
+  }
   .botonera {
     display: flex;
     flex-direction: column;
@@ -723,7 +742,7 @@ footer .bi-instagram {
 }
 @media (width < 768px) {
   body {
-    padding-bottom: 25rem;
+    padding-bottom: 22rem;
   }
   .botonera {
     display: flex;

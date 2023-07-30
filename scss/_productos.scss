@@ -13,6 +13,9 @@
     border-radius: 5px;
     background-color: rgb(186, 186, 186);
     padding: .5rem;
+    h2{
+        color: $textColor;
+    }
     select{
         background-color: $btn2Color;
         color: $whiteColor;
@@ -84,5 +87,14 @@
     margin-bottom: 1.5rem;
     .filters{
         grid-area: filters;
+    }
+    .boton-filtro{
+        color: rgb(62, 62, 62);
+        background-color: transparent;
+        border: none;
+        margin-left: -.6rem;
+        &:hover{
+            color: white;
+        }
     }
 }

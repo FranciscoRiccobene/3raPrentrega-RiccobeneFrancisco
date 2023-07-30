@@ -127,6 +127,9 @@
 
 //breakpoint 768px hasta 992px
 @media (min-width: 767px) and (max-width: 992px){
+    body{
+        padding-bottom: 23rem;
+    }
     //nav
     .botonera{
         display: flex;
@@ -266,7 +269,7 @@
 //breakpoint < 768px
 @media (width < 768px){
     body{
-        padding-bottom: 25rem;
+        padding-bottom: 22rem;
     }
     //nav
     .botonera{

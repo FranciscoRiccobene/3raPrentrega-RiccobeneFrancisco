@@ -84,14 +84,27 @@ function eliminarProductosCarrito(e) {
 botonVaciarCarrito.addEventListener('click', vaciarCarrito);
 
 function vaciarCarrito() {
-    productosCarrito = [];
-    localStorage.setItem('productos-carrito', JSON.stringify(productosCarrito));
-    cargarProductosCarrito();
-    numeritoActualizado();
-    contenedorCarritoVacio.classList.remove('disabled');
-    productosDelCarrito.classList.add('disabled');
-    carritoAcciones.classList.add('disabled');
-    carritoComprado.classList.add('disabled');
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: `Se eliminarán ${productosCarrito.reduce((acc, el) => acc + el.cantidad, 0)} productos.`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#024772',
+        cancelButtonColor: '#808080',
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+      }).then((result) => {
+        if(result.isConfirmed) {
+            productosCarrito = [];
+            localStorage.setItem('productos-carrito', JSON.stringify(productosCarrito));
+            cargarProductosCarrito();
+            numeritoActualizado();
+            contenedorCarritoVacio.classList.remove('disabled');
+            productosDelCarrito.classList.add('disabled');
+            carritoAcciones.classList.add('disabled');
+            carritoComprado.classList.add('disabled');
+        }
+    }) 
 }
 
 function totalEnCarrito() {
