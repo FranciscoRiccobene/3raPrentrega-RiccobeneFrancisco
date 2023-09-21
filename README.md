@@ -19,5 +19,3 @@ Toastify JS - SweetAlert2
 ### Sistema de control de versiones:
 
 GIT - GitHub
-
-**Muchas gracias por la buena onda profe y tutores! Un saludo :)**
