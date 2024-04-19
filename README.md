@@ -1,6 +1,6 @@
-# **ProyectoFinalJS- Riccobene Francisco**
+# **QualyTech- Riccobene Francisco**
 
-Buenas! Presento mi proyecto final de JS. Qualytech.
+Buenas! Éste es un proyecto chico para practicar JS. Qualytech.
 
 ## Lenguajes y tecnologías
 
