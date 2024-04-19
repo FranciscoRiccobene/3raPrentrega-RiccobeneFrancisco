@@ -1,6 +1,6 @@
 # **QualyTech- Riccobene Francisco**
 
-Buenas! Éste es un proyecto chico para practicar JS. Qualytech.
+Buenas! Éste es un proyecto chico para practicar JavaScript. Qualytech.
 
 ## Lenguajes y tecnologías
 
